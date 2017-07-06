@@ -1,0 +1,2 @@
+[12-Apr-2017 23:44:08 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\App\Project' not found in /home/ktfuicom/public_html/app/Http/Controllers/Controller.php on line 13
+[12-Apr-2017 23:44:46 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\App\Project' not found in /home/ktfuicom/public_html/app/Http/Controllers/Controller.php on line 13
