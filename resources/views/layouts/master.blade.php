@@ -49,7 +49,7 @@
 	<div class="w3-container w3-margin-right w3-left">
 		<img class="w3-display-left" src="img/Logo KTF.PNG" alt="logo" style="max-width:80px">
 	</div>
-		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha sarisha</a>
+		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha Sarisha</a>
 		<a href="javascript:void(0)" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right w3-margin"><i class="fa fa-search"></i></a>
 		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
 		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
