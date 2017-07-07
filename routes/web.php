@@ -39,5 +39,8 @@ Route::get('/post', function () {
     return view('ktfui.post');
 });
 
+Route::get('/contact', function(){
+    return view('ktfui.contact');
+});
 
 Route::get('/download', 'Controller@getDownload');
