@@ -41,7 +41,7 @@
   </style>
   @yield('style')
 </head>
-<body>
+<body onload="updateNavBar()">
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2">
@@ -51,10 +51,10 @@
 	</div>
 		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha sarisha</a>
 		<a href="javascript:void(0)" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right w3-margin"><i class="fa fa-search"></i></a>
-		<a id="a1" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
-		<a id="a2" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
-		<a id="a3" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
-		<a id="a4" href="achievement" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Achievement</a>
+		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
+		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
+		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
+		<a id="achievement" href="achievement" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Achievement</a>
   </div>
 </div>
 <!-- Navbar on small screens -->
@@ -71,13 +71,14 @@
 <!-- Footer -->
 <img class="w3-opacity" src="{{ url('img/foto bawah.jpg') }}" alt="Lights" style="width:100%">
 <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-  <a href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <a target="_blank" href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 /* //Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
@@ -106,12 +107,32 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function updateNavBar(){
+    var url = window.location.href;
+    var array_url = url.split('/');
+    var nav = array_url[3];
+    if(nav.localeCompare('achievement') == 0){
+      $('#achievement').removeClass('w3-text-grey');
+      $('#achievement').css('font-weight','bold');
+    }else if (nav.localeCompare('services') == 0) {
+      $('#services').removeClass('w3-text-grey');
+      $('#services').css('font-weight','bold');
+    }else if (nav.localeCompare('contact') == 0) {
+      $('#contact').removeClass('w3-text-grey');
+      $('#contact').css('font-weight','bold');
+    }else if (nav.localeCompare('p') == 1) {
+      $('#project').removeClass('w3-text-grey');
+      $('#project').css('font-weight','bold');
+    }
 }
+
+
+$('document').ready(function() {
+  $('#a3').click(function() {
+
+     $($(this).attr('class')).addClass('w3-text-black');
+  });
+});
 
 </script>
 
