@@ -46,3 +46,7 @@ Route::get('/contact', function(){
 Route::get('/download', 'Controller@getDownload');
 
 Route::get('/dashboard', 'AdminController@index');
+
+Route::get('/radhasarisha', function(){
+    return view('admin.index');
+});
