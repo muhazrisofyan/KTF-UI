@@ -50,3 +50,7 @@ Route::get('/dashboard', 'AdminController@index');
 Route::get('/radhasarisha', function(){
     return view('admin.index');
 });
+
+Route::get('/radhasarisha/manageprojects', function(){
+    return view('admin.manageProjects');
+});
