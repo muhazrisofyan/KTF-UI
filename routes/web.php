@@ -51,6 +51,6 @@ Route::prefix('radhasarisha')->group(function(){
   Route::get('/home', 'HomeController@index');
 
   Route::get('/manageprojects', function(){
-      return view('admin.manageProjects');
-  });
+      return view('auth.manageProjects');
+  })->middleware('auth');
 });

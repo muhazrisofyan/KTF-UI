@@ -1,4 +1,4 @@
-@extends('admin.masterAdmin')
+@extends('auth.masterAdmin')
 
 @section('content')
   <div class="row">

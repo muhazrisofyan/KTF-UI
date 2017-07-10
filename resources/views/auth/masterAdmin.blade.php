@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Admin Page KTF UI - Radha Sarisha</title>
 
@@ -32,7 +33,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
 </head>
 
 <body>
@@ -54,10 +59,31 @@
 
             <ul class="nav navbar-top-links navbar-right">
                 <!-- /.logout -->
-                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                <li><a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 
                 <!-- /.dropdown -->
             </ul>
+            {{-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+                </ul>
+            </li> --}}
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
@@ -176,6 +202,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/dist/js/sb-admin-2.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 
