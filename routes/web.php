@@ -45,12 +45,12 @@ Route::get('/contact', function(){
 
 Route::get('/download', 'Controller@getDownload');
 
-Route::get('/dashboard', 'AdminController@index');
+Route::prefix('radhasarisha')->group(function(){
+  Auth::routes();
 
-Route::get('/radhasarisha', function(){
-    return view('admin.index');
-});
+  Route::get('/home', 'HomeController@index');
 
-Route::get('/radhasarisha/manageprojects', function(){
-    return view('admin.manageProjects');
+  Route::get('/manageprojects', function(){
+      return view('admin.manageProjects');
+  });
 });
