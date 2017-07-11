@@ -44,3 +44,13 @@ Route::get('/contact', function(){
 });
 
 Route::get('/download', 'Controller@getDownload');
+
+Route::prefix('radhasarisha')->group(function(){
+  Auth::routes();
+
+  Route::get('/home', 'HomeController@index');
+
+  Route::get('/manageprojects', function(){
+      return view('auth.manageProjects');
+  })->middleware('auth');
+});
