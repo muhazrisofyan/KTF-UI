@@ -113,27 +113,22 @@ function updateNavBar(){
     var nav = array_url[3];
     if(nav.localeCompare('achievement') == 0){
       $('#achievement').removeClass('w3-text-grey');
+      $('#achievement').addClass('w3-text-orange');
       $('#achievement').css('font-weight','bold');
     }else if (nav.localeCompare('services') == 0) {
       $('#services').removeClass('w3-text-grey');
+      $('#services').addClass('w3-text-orange');
       $('#services').css('font-weight','bold');
     }else if (nav.localeCompare('contact') == 0) {
       $('#contact').removeClass('w3-text-grey');
+      $('#contact').addClass('w3-text-orange');
       $('#contact').css('font-weight','bold');
     }else if (nav.localeCompare('p') == 1) {
       $('#project').removeClass('w3-text-grey');
+      $('#project').addClass('w3-text-orange');
       $('#project').css('font-weight','bold');
     }
 }
-
-
-$('document').ready(function() {
-  $('#a3').click(function() {
-
-     $($(this).attr('class')).addClass('w3-text-black');
-  });
-});
-
 </script>
 
 </body>
