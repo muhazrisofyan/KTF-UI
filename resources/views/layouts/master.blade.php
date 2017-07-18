@@ -39,7 +39,7 @@
       font-family: stackyard;
   }
   </style>
-  @yield('style')
+  <link rel="stylesheet" href="/css/master.css" >
 </head>
 <body onload="updateNavBar()">
 <!-- Navbar -->
