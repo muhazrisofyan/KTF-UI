@@ -17,44 +17,18 @@
 
 
       <br>
-      <div class="col-lg-4">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  Default Panel
-              </div>
-              <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-              </div>
-              <div class="panel-footer">
-                  Panel Footer
-              </div>
-          </div>
-      </div>
-      <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-12">
           <div class="panel panel-primary">
               <div class="panel-heading">
                   Primary Panel
               </div>
               <div class="panel-body">
+                  <img src="http://iwgm.wphost2.ui.ac.id/wp-content/uploads/11/2017/03/ui_logo.png" alt="Image" height="300px"><hr>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
               </div>
               <div class="panel-footer">
-                  Panel Footer
-              </div>
-          </div>
-      </div>
-      <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-          <div class="panel panel-success">
-              <div class="panel-heading">
-                  Success Panel
-              </div>
-              <div class="panel-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-              </div>
-              <div class="panel-footer">
-                  Panel Footer
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
               </div>
           </div>
       </div>
