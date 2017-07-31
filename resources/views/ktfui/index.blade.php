@@ -73,7 +73,7 @@
   		   100 members, which are FISIP UI students who have passion in dance and
   		   music. Our performance experiences &amp; projects diverse both in national and
   		   international scale</h6>
-  		<a href="/download" class="w3-grey w3-border w3-btn w3-margin w3-dinlight">Company Profile</a>
+  		<a href="/download" class="w3-cyan w3-border w3-round-xlarge w3-btn w3-margin"><span style="color:white">Company Profile</span></a>
         </div>
     </div>
 

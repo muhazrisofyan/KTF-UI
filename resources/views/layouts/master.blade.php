@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
   <style>
   .mySlides {display: none}
   @font-face {
@@ -46,15 +48,15 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2">
 	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-	<div class="w3-container w3-margin-right w3-left">
+	<div class="w3-container w3-margin-right w3-padding w3-left">
 		<img class="w3-display-left" src="img/Logo KTF.PNG" alt="logo" style="max-width:80px">
 	</div>
 		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha Sarisha</a>
 		<a href="javascript:void(0)" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right w3-margin"><i class="fa fa-search"></i></a>
-		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
-		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
-		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
-		<a id="achievement" href="achievement" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Achievement</a>
+		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
+		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
+		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
+		<a id="achievement" href="achievement" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Achievement</a>
   </div>
 </div>
 <!-- Navbar on small screens -->
