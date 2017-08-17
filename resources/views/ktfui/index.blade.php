@@ -19,18 +19,19 @@
 @endsection
 
 @section('content')
+  <br><br>
 <!-- Page content -->
   <div class="w3-content w3-display-container" style="max-width:2000px;">
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-      <img src="img/home 1.JPG" style="width:100%">
+      <img class="w3-animate-fading" src="img/home 1.JPG" style="width:100%">
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="img/home 2.JPG" style="width:100%">
+      <img class="w3-animate-fading" src="img/home 2.JPG" style="width:100%">
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="img/home 3.jpg" style="width:100%">
+      <img class="w3-animate-fading" src="img/home 3.jpg" style="width:100%">
     </div>
     <img src="img/bunga2an.png" class="w3-display-left w3-opacity-max" style="width:45%;z-index: -1">
     <img src="img/bunga3an.png" class="w3-display-bottomright w3-opacity-max" style="width:60%;z-index: -1">
@@ -42,15 +43,15 @@
   	</div>
       <div class="w3-row w3-padding-16 w3-text-orange">
         <div class="w3-third">
-          <img src="{{url('img/traditional dance.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%">
+          <a href="profile1"><img src="{{url('img/traditional dance.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%"></a>
   		<h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight w3-">dance</h4>
         </div>
         <div class="w3-third">
-          <img src="{{url('img/modern dance.png')}}" class="w3-btn w3-circle" alt="Random Name" style="width:80%">
+          <a href="profile2"><img src="{{url('img/modern dance.png')}}" class="w3-btn w3-circle" alt="Random Name" style="width:80%"></a>
   		<h1 class="w3-stackyard">Modern</h1><h4 class="w3-dinlight">dance</h4>
         </div>
   	  <div class="w3-third">
-          <img src="{{url('img/traditional music.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%">
+          <a href="profile3" ><img src="{{url('img/traditional music.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%"></a>
   		<h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight">music</h4>
         </div>
       </div>
@@ -94,7 +95,7 @@
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}
         x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 4000);
+        setTimeout(carousel, 6000);
     }
   </script>
 @endsection

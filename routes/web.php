@@ -23,9 +23,8 @@ Route::get('/project', function () {
     return view('ktfui.project');
 });
 
-Route::get('/achievement', function () {
-    return view('ktfui.achievement');
-});
+// which profile to show
+Route::get('/profile{page}', 'Controller@showPage');
 
 Route::get('/services', function () {
     return view('ktfui.services');
@@ -37,10 +36,6 @@ Route::get('/contact', function () {
 
 Route::get('/post', function () {
     return view('ktfui.post');
-});
-
-Route::get('/contact', function(){
-    return view('ktfui.contact');
 });
 
 Route::get('/download', 'Controller@getDownload');

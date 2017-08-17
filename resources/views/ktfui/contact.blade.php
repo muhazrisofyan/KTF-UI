@@ -2,8 +2,8 @@
 
 @section('content')
 <br>
-<div class="w3-center w3-content" style="padding-top:150px;padding-bottom:60px">
-  <img src="img/Logo KTF.PNG" alt="logo" style="max-width:500px">
+<div class="w3-center" style="padding-top:150px;padding-bottom:60px">
+  <img src="img/Logo KTF.PNG" alt="logo" style="max-width:500px;width:100%">
 </div>
 
 {{-- <div class="w3-row w3-content w3-display-container w3-padding-bottom" style="padding-bottom:400px">
@@ -41,11 +41,15 @@
 <div class="w3-row w3-container">
   <div class="w3-teal w3-container w3-third" style="padding-bottom:400px;margin-bottom:100px;padding-top:50px;">
     <h2>Get Social</h2>
-    <div class="w3-container w3-xlarge w3-center">
-      <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity contactimage"></i></a>
-      <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity contactimage"></i></a>
-      <a target="_blank" href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity contactimage"></i></a>
-      <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity contactimage"></i></a>
+    <div class="w3-row">
+      <div class="w3-container w3-xlarge w3-center">
+        <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity contactimage"></i></a>
+        <span class="w3-mobile">
+        <a target="_blank" href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity contactimage"></i></a>
+        </span>
+      </div>
     </div>
     <h2 style="padding-top:60px">Contact Info</h2>
     <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  Arsa (081287479610)</i></span>

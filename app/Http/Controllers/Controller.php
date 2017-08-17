@@ -22,6 +22,10 @@ class Controller extends BaseController
                 );
 
         return response()->download($file, 'Company Profile KTF Updated (2016).pdf', $headers);
-    }  
-}
+    }
 
+    public function showPage($page)
+    {
+        return view('ktfui.profile',['hals' => $page]);
+    }
+}

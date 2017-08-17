@@ -56,12 +56,12 @@
 		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
 		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
 		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
-		<a id="achievement" href="achievement" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Achievement</a>
+		<a id="profile" href="profile1" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
   </div>
 </div>
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="achievement" class="w3-bar-item w3-button w3-padding-large">Achievement</a>
+  <a href="profile1" class="w3-bar-item w3-button w3-padding-large">Profile</a>
   <a href="project" class="w3-bar-item w3-button w3-padding-large">Project</a>
   <a href="services" class="w3-bar-item w3-button w3-padding-large">Services</a>
   <a href="contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
@@ -113,10 +113,10 @@ function updateNavBar(){
     var url = window.location.href;
     var array_url = url.split('/');
     var nav = array_url[3];
-    if(nav.localeCompare('achievement') == 0){
-      $('#achievement').removeClass('w3-text-grey');
-      $('#achievement').addClass('w3-text-orange');
-      $('#achievement').css('font-weight','bold');
+    if(nav.includes('profile')){
+      $('#profile').removeClass('w3-text-grey');
+      $('#profile').addClass('w3-text-orange');
+      $('#profile').css('font-weight','bold');
     }else if (nav.localeCompare('services') == 0) {
       $('#services').removeClass('w3-text-grey');
       $('#services').addClass('w3-text-orange');
