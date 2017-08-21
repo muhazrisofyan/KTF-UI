@@ -99,7 +99,9 @@
           </li>
           <li>
             <div class="w3-row w3-content w3-container">
-              <iframe src="https://www.youtube.com/watch?v=lp-EO5I60KA" width="720" height="360"></iframe>
+                <div class="video-container">
+                  <iframe style="max-width:100%;height:100%" src="https://www.youtube.com/embed/lp-EO5I60KA" ></iframe>
+                </div>
             </div>
           </li>
         </ul>
