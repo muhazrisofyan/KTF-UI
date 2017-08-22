@@ -8,8 +8,8 @@
 
 @section('content')
 <!-- Page content -->
-<br>
-<div class="w3-row">
+
+<div class="w3-row" style="margin-top:80px">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">

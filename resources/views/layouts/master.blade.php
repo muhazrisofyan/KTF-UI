@@ -47,7 +47,7 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2">
-	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" style="margin-top:10px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	<div class="w3-container w3-margin-right w3-padding w3-left">
 		<img class="w3-display-left" src="img/Logo KTF.PNG" alt="logo" style="max-width:80px">
 	</div>
@@ -60,7 +60,7 @@
   </div>
 </div>
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:71px">
   <a href="profile1" class="w3-bar-item w3-button w3-padding-large">Profile</a>
   <a href="project" class="w3-bar-item w3-button w3-padding-large">Project</a>
   <a href="services" class="w3-bar-item w3-button w3-padding-large">Services</a>
