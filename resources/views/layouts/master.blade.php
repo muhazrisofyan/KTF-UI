@@ -50,9 +50,13 @@
 	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" style="margin-top:10px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	<div class="w3-container w3-margin-right w3-padding w3-left">
 		<img class="w3-display-left" src="img/Logo KTF.PNG" alt="logo" style="max-width:80px">
-	</div>
+	</div class="w3-display-container">
 		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha Sarisha</a>
-		<a href="javascript:void(0)" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right w3-margin"><i class="fa fa-search"></i></a>
+		<button onclick="searchBar()" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right" style="font-size:20px;margin-top:10px"><i id="searchbutton" class="fa fa-search"></i></button>
+    <div id="searchbar" class="w3-dropdown-content w3-bar-block w3-border w3-display-topright" style="margin-top:60px">
+      <a href="#" class="w3-button w3-black w3-right"><i class="fa fa-search"></i></a>
+      <input type="text" class="w3-col s9 w3-bar-item w3-input w3-right" placeholder="Search..">
+    </div>
 		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
 		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
 		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
@@ -105,6 +109,19 @@ function myFunction() {
         x.className += " w3-show";
     } else {
         x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Toggle the search button
+function searchBar() {
+    var x = document.getElementById("searchbar");
+    var y = document.getElementById("searchbutton");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className = "fa fa-close";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        y.className = "fa fa-search";
     }
 }
 
