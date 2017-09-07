@@ -48,4 +48,8 @@ Route::prefix('radhasarisha')->group(function(){
   Route::get('/manageprojects', function(){
       return view('auth.manageProjects');
   })->middleware('auth');
+
+  Route::get('/manageprojects2', function(){
+      return view('auth.manageProjects2');
+  })->middleware('auth');
 });

@@ -27,6 +27,9 @@
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Custom CSS for Add project -->
+    <link rel="stylesheet" href="/css/adminaddproj.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,6 +41,10 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+
+    <!-- jquery for file upload interface-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/addProjectJs.js"></script>
 </head>
 
 <body>
@@ -97,11 +104,11 @@
                             <a href="/radhasarisha"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="/radhasarisha/manageprojects"><i class="fa fa-bar-chart fa-fw"></i> Manage Projects</a>
+                            <a href="/radhasarisha/manageprojects"><i class="fa fa-plus-square fa-fw"></i> Add Project</a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> Manage SlideShow</a>
+                            <a href="/radhasarisha/manageprojects2"><i class="fa fa-gear fa-fw"></i> Edit Projects</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Messages</a>
