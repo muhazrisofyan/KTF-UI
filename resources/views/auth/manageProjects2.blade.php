@@ -12,36 +12,54 @@
 
       <br>
       <div class="col-lg-12">
-          <div class="panel panel-primary">
+
+          <!-- Project edit or delete-->
+          <div class="panel panel-danger">
               <div class="panel-heading">
                   Add new post
               </div>
 
               <div class="panel-body">
-
-                <div class="form-group">
-                  <label for="usr">Title:</label>
-                  <input type="text" class="form-control" id="usr">
-                </div>
-
-                <form action="/upload" method="post" enctype="multipart/form-data">
-                    {{ csrf_field() }}
-                    Pictures(can attach more than one):
-                    <br />
-                    <input type="file" id="files" name="photos[]" multiple/>
-                    <input type="submit" value="Upload" />
-                </form>
-
-                <div class="form-group" style="padding-top:20px">
-                  <label for="comment">Content:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-              </div>
-
-              <div class="panel-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-              </div>
+                <!--Table of project-->
+                  <h2>Edit or remove your posts</h2>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Post created</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tari Genggong</td>
+                        <td>1 Juni 1998</td>
+                        <td class="pull-right">
+                          <button type="button" class="btn btn-warning">Edit</button>
+                          <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Tari-tarian</td>
+                        <td>2 Juni 1997</td>
+                        <td class="pull-right">
+                          <button type="button" class="btn btn-warning">Edit</button>
+                          <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Asal Nari</td>
+                        <td>3 Juni 1996</td>
+                        <td class="pull-right">
+                          <button type="button" class="btn btn-warning">Edit</button>
+                          <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!--End of Table-->
           </div>
+
       </div>
       <!-- /.col-lg-4 -->
   </div>

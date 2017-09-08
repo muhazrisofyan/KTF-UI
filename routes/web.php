@@ -52,4 +52,8 @@ Route::prefix('radhasarisha')->group(function(){
   Route::get('/manageprojects2', function(){
       return view('auth.manageProjects2');
   })->middleware('auth');
+
+  Route::get('/manageprojects3', function(){
+      return view('auth.manageProjects3');
+  })->middleware('auth');
 });
