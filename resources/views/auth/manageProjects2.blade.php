@@ -16,7 +16,7 @@
           <!-- Project edit or delete-->
           <div class="panel panel-danger">
               <div class="panel-heading">
-                  Add new post
+                  Manage project here
               </div>
 
               <div class="panel-body">
