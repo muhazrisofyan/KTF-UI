@@ -43,14 +43,18 @@ Route::get('/download', 'Controller@getDownload');
 Route::prefix('radhasarisha')->group(function(){
   Auth::routes();
 
-  Route::get('/home', 'HomeController@index');
+  Route::match(['get', 'post'], 'register', function(){
+    return redirect('/radhasarisha/login');
+  });
 
-  Route::get('/manageprojects', function(){
-      return view('auth.manageProjects');
+  Route::get('/home', 'HomeController@index')->middleware('auth');
+
+  Route::get('/createProject', function(){
+      return view('auth.createProject');
   })->middleware('auth');
 
-  Route::get('/manageprojects2', function(){
-      return view('auth.manageProjects2');
+  Route::get('/manageProjects', function(){
+      return view('auth.manageProjects');
   })->middleware('auth');
 
   Route::get('/manageprojects3', function(){

@@ -104,11 +104,11 @@
                             <a href="/radhasarisha/home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="/radhasarisha/manageprojects"><i class="fa fa-plus-square fa-fw"></i> Add Project</a>
+                            <a href="/radhasarisha/createProject"><i class="fa fa-plus-square fa-fw"></i> Create Project</a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="/radhasarisha/manageprojects2"><i class="fa fa-gear fa-fw"></i> Edit Projects</a>
+                            <a href="/radhasarisha/manageProjects"><i class="fa fa-gear fa-fw"></i> Manage Projects</a>
                         </li>
                         <li>
                             <a href="/radhasarisha/manageprojects3"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>
