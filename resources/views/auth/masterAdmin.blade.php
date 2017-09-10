@@ -101,7 +101,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="/radhasarisha"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="/radhasarisha/home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="/radhasarisha/manageprojects"><i class="fa fa-plus-square fa-fw"></i> Add Project</a>
