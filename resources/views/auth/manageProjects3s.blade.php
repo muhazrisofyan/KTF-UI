@@ -2,6 +2,9 @@
 
 @section('content')
   <div class="row">
+    <div class="alert alert-success">
+        <strong>Success!</strong> Contact person berhasil diubah.
+    </div>
       <div class="col-lg-12">
           <h1 class="page-header">Contact Person</h1>
       </div>

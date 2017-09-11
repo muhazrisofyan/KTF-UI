@@ -20,9 +20,9 @@
       </div>
     </div>
     <h2 style="padding-top:60px">Contact Info</h2>
-    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  Arsa (081287479610)</i></span>
+    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
     <br>
-    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  ktf.fisipui@gmail.com</i></span>
+    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  {{$email}}</i></span>
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:324px;margin-bottom:100px;padding-top:50px;">
     <h2 class="w3-text-orange"style="padding-bottom:25px">Get in touch with us</h2>

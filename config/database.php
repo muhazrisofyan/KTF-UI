@@ -46,7 +46,7 @@ return [
             'database' => env('DB_DATABASE', 'ktfuicom_test'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'null'),
-            'unix_socket' => '',
+            'unix_socket' => '',///Applications/xampp/xamppfiles/var/mysql/mysql.sock
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
