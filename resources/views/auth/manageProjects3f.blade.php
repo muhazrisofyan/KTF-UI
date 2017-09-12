@@ -2,6 +2,9 @@
 
 @section('content')
   <div class="row">
+    <div class="alert alert-danger">
+        <strong>Failed!</strong> Tidak boleh ada data yang kosong.
+    </div>
       <div class="col-lg-12">
           <h1 class="page-header">Contact Person</h1>
       </div>

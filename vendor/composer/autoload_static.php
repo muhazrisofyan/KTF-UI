@@ -272,6 +272,7 @@ class ComposerStaticInitb8f037496dcd5bf4b49eace5bd95ce19
     );
 
     public static $classMap = array (
+        'CreateCpTable' => __DIR__ . '/../..' . '/database/migrations/2017_09_11_013811_create_cp_table.php',
         'CreateImagesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_12_231204_create_images_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_12_225447_create_projects_table.php',
@@ -349,7 +350,6 @@ class ComposerStaticInitb8f037496dcd5bf4b49eace5bd95ce19
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
-        'Ktfui' => __DIR__ . '/../..' . '/database/migrations/2017_09_10_023617_ktfui.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',

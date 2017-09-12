@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
   public function create(){
-    return 'helo';
+    return redirect('/radhasarisha/createProject');
   }
 }

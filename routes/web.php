@@ -30,9 +30,7 @@ Route::get('/services', function () {
     return view('ktfui.services');
 });
 
-Route::get('/contact', function () {
-    return view('ktfui.contact');
-});
+Route::get('/contact', 'CPController@show');
 
 Route::get('/post', function () {
     return view('ktfui.post');
@@ -57,11 +55,12 @@ Route::prefix('radhasarisha')->group(function(){
       return view('auth.manageProjects');
   })->middleware('auth');
 
-  Route::get('/manageprojects3', function(){
-      return view('auth.manageProjects3');
-  })->middleware('auth');
+  Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
 });
+
 
 Route::prefix('project')->group(function(){
   Route::get('/create', 'ProjectController@create')->middleware('auth');
 });
+
+Route::post('/contactupdate', 'CPController@change');
