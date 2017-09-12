@@ -61,3 +61,7 @@ Route::prefix('radhasarisha')->group(function(){
       return view('auth.manageProjects3');
   })->middleware('auth');
 });
+
+Route::prefix('project')->group(function(){
+  Route::get('/create', 'ProjectController@create')->middleware('auth');
+});

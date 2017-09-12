@@ -19,28 +19,25 @@
 
               <div class="panel-body">
 
-                <div class="form-group">
-                  <label for="usr">Title:</label>
-                  <input type="text" class="form-control" id="usr">
-                </div>
 
-                <div class="form-group" style="padding-top:20px">
-                  <label for="comment">Content:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-
-                <form action="/upload" method="post" enctype="multipart/form-data">
+                <form action="/project/create" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
-                    <label for="comment">Pictures (can attach more than one):</label>
+                    <label for="usr">Title:</label>
+                    <input type="text" class="form-control" id="usr">
 
+                    <label for="comment">Content:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+
+                    <label for="comment">Pictures (can attach more than one):</label>
                     <br />
                     <input type="file" id="pictures" name="photos[]" multiple/>
+                    <br>
+                      <button type="submit" class="btn btn-primary">Add</button>
+
                 </form>
               </div>
 
-              <div class="panel-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-              </div>
+
           </div>
       </div>
       <!-- /.col-lg-4 -->
