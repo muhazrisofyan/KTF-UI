@@ -22,7 +22,8 @@ class CPController extends Controller
         'email' => $req->email
       ]);
 
-      return view('auth.manageProjects3s',['nama'=>$req->name,'phonenumber'=>$req->hp, 'email'=>$req->email]);
+
+      return redirect('/radhasarisha/manageprojects3');
     }
 
     public function show()

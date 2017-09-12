@@ -17,25 +17,34 @@
                   Create new project
               </div>
 
-              <div class="panel-body">
+
 
 
                 <form action="/project/create" method="post" enctype="multipart/form-data">
-                    {{ csrf_field() }}
-                    <label for="usr">Title:</label>
-                    <input type="text" class="form-control" id="usr">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="title">Title</label>
+                      <input type="text" class="form-control" id="title" name="title">
+                    </div>
 
-                    <label for="comment">Content:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="form-group">
+                      <label for="content">Content</label>
+                      <textarea class="form-control" rows="5" id="content" name="content"></textarea>
+                    </div>
 
-                    <label for="comment">Pictures (can attach more than one):</label>
-                    <br />
-                    <input type="file" id="pictures" name="photos[]" multiple/>
-                    <br>
-                      <button type="submit" class="btn btn-primary">Add</button>
+                    <div class="form-group">
+                      <label for="comment">Pictures (can attach more than one):</label>
+                      <input type="file" id="pictures" name="photos[]" multiple/>
+                    </div>
 
+                  </div>
+
+                  <div class="panel-footer">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                      {{ csrf_field() }}
+                  </div>
                 </form>
-              </div>
+
 
 
           </div>

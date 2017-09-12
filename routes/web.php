@@ -51,16 +51,14 @@ Route::prefix('radhasarisha')->group(function(){
       return view('auth.createProject');
   })->middleware('auth');
 
-  Route::get('/manageProjects', function(){
-      return view('auth.manageProjects');
-  })->middleware('auth');
+  Route::get('/manageProjects', 'ProjectController@show')->middleware('auth');
 
   Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
 });
 
 
 Route::prefix('project')->group(function(){
-  Route::get('/create', 'ProjectController@create')->middleware('auth');
+  Route::post('/create', 'ProjectController@create')->middleware('auth');
 });
 
 Route::post('/contactupdate', 'CPController@change');
