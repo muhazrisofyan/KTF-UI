@@ -21,14 +21,17 @@
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-	  <a href="post"><img src="img/1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    @foreach ($projects as $project)
+      <div class="w3-third w3-container w3-margin-bottom">
+  	    <a href="post"><img src="{{asset('storage/project_img/' . $project->id . '/1.png')}}" alt="Norway" width="425.33" height="281.77" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>{{$project->title}}</b></p>
+          <p>{{$project->content}}</p>
+        </div>
       </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    @endforeach
+
+    {{-- <div class="w3-third w3-container w3-margin-bottom">
       <a href="post"><img src="img/2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
@@ -66,7 +69,7 @@
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
-    </div>
+    </div> --}}
   </div>
 
   <!-- Pagination -->

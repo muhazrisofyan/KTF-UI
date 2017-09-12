@@ -19,9 +19,7 @@ Route::get('/ktfui', function () {
     return view('ktfui.index');
 });
 
-Route::get('/project', function () {
-    return view('ktfui.project');
-});
+Route::get('/projects', 'ProjectController@showIndex');
 
 // which profile to show
 Route::get('/profile{page}', 'Controller@showPage');
@@ -59,6 +57,7 @@ Route::prefix('radhasarisha')->group(function(){
 
 Route::prefix('project')->group(function(){
   Route::post('/create', 'ProjectController@create')->middleware('auth');
+  Route::get('/delete/{id}', 'ProjectController@delete')->middleware('auth');
 });
 
 Route::post('/contactupdate', 'CPController@change');

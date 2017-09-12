@@ -9,12 +9,15 @@ class CPController extends Controller
 {
     public function change(Request $req)
     {
+      $this->validate($req, [
+        'name' => 'required|max:20',
+        'hp' => 'required|max:15',
+        'email' => 'required'
+      ]);
+
       $nama = $req->name;
       $phonenumber = $req->hp;
       $email = $req->email;
-      if (($nama == null)||($phonenumber==null)||($email==null)) {
-        return view('auth.manageProjects3f',['nama'=>$req->name,'phonenumber'=>$req->hp, 'email'=>$req->email]);
-      }
 
       cp::find(1)->update([
         'nama' => $req->name,
@@ -23,7 +26,7 @@ class CPController extends Controller
       ]);
 
 
-      return redirect('/radhasarisha/manageprojects3');
+      return redirect()->back()->with('message', 'Contact Person has been updated!');
     }
 
     public function show()

@@ -59,14 +59,14 @@
     </div>
 		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
 		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
-		<a id="project" href="project" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Project</a>
+		<a id="projects" href="projects" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Projects</a>
 		<a id="profile" href="profile1" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
   </div>
 </div>
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:71px">
   <a href="profile1" class="w3-bar-item w3-button w3-padding-large">Profile</a>
-  <a href="project" class="w3-bar-item w3-button w3-padding-large">Project</a>
+  <a href="projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
   <a href="services" class="w3-bar-item w3-button w3-padding-large">Services</a>
   <a href="contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
 </div>
@@ -143,9 +143,9 @@ function updateNavBar(){
       $('#contact').addClass('w3-text-orange');
       $('#contact').css('font-weight','bold');
     }else if (nav.localeCompare('p') == 1) {
-      $('#project').removeClass('w3-text-grey');
-      $('#project').addClass('w3-text-orange');
-      $('#project').css('font-weight','bold');
+      $('#projects').removeClass('w3-text-grey');
+      $('#projects').addClass('w3-text-orange');
+      $('#projects').css('font-weight','bold');
     }
 }
 </script>
