@@ -52,11 +52,14 @@ Route::prefix('radhasarisha')->group(function(){
   Route::get('/manageProjects', 'ProjectController@show')->middleware('auth');
 
   Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
+
+  Route::get('/editProject/{id}', 'ProjectController@showId');
 });
 
 
 Route::prefix('project')->group(function(){
   Route::post('/create', 'ProjectController@create')->middleware('auth');
+  Route::post('/edit/{id}', 'ProjectController@edit')->middleware('auth');
   Route::get('/delete/{id}', 'ProjectController@delete')->middleware('auth');
 });
 

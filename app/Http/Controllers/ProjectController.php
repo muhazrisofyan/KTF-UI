@@ -10,7 +10,7 @@ class ProjectController extends Controller
   public function create(Request $req){
 
     $this->validate($req, [
-      'title'   => 'required|max:40',
+      'title'   => 'required|max:100',
       'content' => 'required',
       'photos'  => 'required'
     ]);
@@ -46,6 +46,37 @@ class ProjectController extends Controller
   public function showIndex(Request $req){
     $projects = Projects::all();
     return view('ktfui.projects', ['projects'=>$projects]);
+  }
+
+  public function showId($id){
+    $project = Projects::find($id);
+    return view('auth.editProject', ['project'=>$project]);
+  }
+
+  public function edit(Request $req, $id)
+  {
+    $this->validate($req, [
+      'title' => 'required|max:100',
+      'content' => 'required',
+      'photos' => 'required'
+    ]);
+
+    $counter = 1;
+    foreach ($req->photos as $photo) {
+            $filename = $photo->storeAs('public/project_img/' . $id, $counter . '.png');
+            $counter = $counter + 1;
+    }
+
+    $title = $req->title;
+    $content = $req->content;
+
+    Projects::find($id)->update([
+      'title' => $req->title,
+      'content' => $req->content
+    ]);
+
+
+    return redirect()->back()->with('message', 'Post with id ' . $id . ' has been updated!');
   }
 
   public function delete($id){

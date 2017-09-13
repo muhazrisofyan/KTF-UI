@@ -41,11 +41,15 @@
 
                       <tr>
                         <td>{{$project->id}}</td>
-                        <td>{{$project->title}}</td>
+                        <td>@if (strlen($project->title) > 50)
+                          {{substr($project->title, 0, 50)}}
+                        @else
+                          {{$project->title}}
+                        @endif</td>
                         <td>{{$project->created_at}}</td>
                         <td>{{$project->updated_at}}</td>
                         <td class="pull-right">
-                          <button type="button" class="btn btn-warning">Edit</button>
+                          <a href="/radhasarisha/editProject/{{$project->id}}"><button type="button" class="btn btn-warning">Edit</button></a>
                           <a href="/project/delete/{{$project->id}}"><button type="button" class="btn btn-danger">Delete</button></a>
 
                         </td>
