@@ -49,9 +49,9 @@
   <div class="w3-bar w3-white w3-card-2">
 	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" style="margin-top:10px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	<div class="w3-container w3-margin-right w3-padding w3-left">
-		<img class="w3-display-left" src="img/Logo KTF.PNG" alt="logo" style="max-width:80px">
+		<img class="w3-display-left" src="{{asset('img/Logo KTF.PNG')}}" alt="logo" style="max-width:80px">
 	</div class="w3-display-container">
-		<a href="ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha Sarisha</a>
+		<a href="/ktfui" class="w3-text-orange w3-button w3-hover-white w3-left-align w3-bar-item w3-padding w3-identica w3-margin-left w3-large">Komunitas Tari FISIP UI</br>Radha Sarisha</a>
 		<button onclick="searchBar()" class="w3-padding-large w3-btn w3-round w3-hide-small w3-right" style="font-size:20px;margin-top:10px"><i id="searchbutton" class="fa fa-search"></i></button>
     <div id="searchbar" class="w3-dropdown-content w3-bar-block w3-border w3-display-topright" style="margin-top:60px">
       <a href="#" class="w3-button w3-black w3-right"><i class="fa fa-search"></i></a>
@@ -65,17 +65,17 @@
 </div>
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:71px">
-  <a href="profile1" class="w3-bar-item w3-button w3-padding-large">Profile</a>
-  <a href="projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
-  <a href="services" class="w3-bar-item w3-button w3-padding-large">Services</a>
-  <a href="contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  <a href="/profile1" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+  <a href="/projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+  <a href="/services" class="w3-bar-item w3-button w3-padding-large">Services</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
 </div>
 
 <!-- Page content -->
 @yield('content')
 <!-- Page content -->
 <!-- Footer -->
-<img class="w3-opacity" src="{{ url('img/foto bawah.jpg') }}" alt="Lights" style="width:100%">
+<img class="w3-opacity" src="{{ asset('img/foto bawah.jpg') }}" alt="Lights" style="width:100%">
 <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
   <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
   <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity"></i></a>

@@ -113,6 +113,9 @@
                         <li>
                             <a href="/radhasarisha/manageprojects3"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>
                         </li>
+                        <li>
+                            <a href="/radhasarisha/messages"><i class="fa fa-edit fa-fw"></i> Messages</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

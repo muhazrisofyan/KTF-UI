@@ -21,6 +21,8 @@ Route::get('/ktfui', function () {
 
 Route::get('/projects', 'ProjectController@showIndex');
 
+Route::get('/projects/{id}', 'ProjectController@post');
+
 // which profile to show
 Route::get('/profile{page}', 'Controller@showPage');
 
@@ -54,6 +56,8 @@ Route::prefix('radhasarisha')->group(function(){
   Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
 
   Route::get('/editProject/{id}', 'ProjectController@showId');
+
+  Route::get('/messages', 'MessagesController@show');
 });
 
 
@@ -61,6 +65,9 @@ Route::prefix('project')->group(function(){
   Route::post('/create', 'ProjectController@create')->middleware('auth');
   Route::post('/edit/{id}', 'ProjectController@edit')->middleware('auth');
   Route::get('/delete/{id}', 'ProjectController@delete')->middleware('auth');
+  Route::get('/deleteImage/{id}/{img}', 'ProjectController@deleteImage')->middleware('auth');
 });
 
 Route::post('/contactupdate', 'CPController@change');
+
+Route::post('/sendMessage', 'MessagesController@send');

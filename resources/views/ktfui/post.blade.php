@@ -15,7 +15,7 @@
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="img/4.jpg" alt="Nature" style="width:100%">
+    <img src="{{asset('img/4.jpg')}}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>UI ART WAR 2014</b></h3>
       <h5>Membawa pulang juara 1 tari, <span class="w3-opacity">May 2, 2014</span></h5>
@@ -54,22 +54,22 @@ menyukseskan penampilan ini.</p>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <a href="post"><img src="img/1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+        <a href="post"><img src="{{asset('img/1.jpg')}}" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
         <span class="w3-large">Lorem</span><br>
         <span>Sed mattis nunc</span>
       </li>
       <li class="w3-padding-16">
-        <a href="post"><img src="img/2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+        <a href="post"><img src="{{asset('img/2.jpg')}}" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
         <span class="w3-large">Ipsum</span><br>
         <span>Praes tinci sed</span>
       </li>
       <li class="w3-padding-16">
-        <a href="post"><img src="img/3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+        <a href="post"><img src="{{asset('img/3.jpg')}}" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
         <span class="w3-large">Dorum</span><br>
         <span>Ultricies congue</span>
       </li>
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <a href="post"><img src="img/4.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+        <a href="post"><img src="{{asset('img/4.jpg')}}" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
         <span class="w3-large">Mingsum</span><br>
         <span>Lorem ipsum dipsum</span>
       </li>

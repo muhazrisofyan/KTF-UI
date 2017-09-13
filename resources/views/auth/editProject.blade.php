@@ -44,7 +44,13 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="comment">Pictures (can attach more than one):</label>
+                      @foreach ($images as $image)
+                        <img src="{{asset('storage/project_img/' . $project->id . '/' . $image)}}" alt="Norway" width="100" height="100">
+                        <br><a href="/project/deleteImage/{{$project->id}}/{{$image}}"><button type="button" class="btn btn-danger">Delete</button></a>
+                        <br>
+                      @endforeach
+                      <br>
+                      <label for="comment">Add Images (can attach more than one):</label>
                       <input type="file" id="pictures" name="photos[]" multiple/ >
                     </div>
 

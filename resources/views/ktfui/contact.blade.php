@@ -2,6 +2,14 @@
 
 @section('content')
 
+  @if(session()->has('message'))
+  <div class="w3-panel w3-green">
+    <strong>Success! </strong>{{ session()->get('message') }}
+  </div>
+  @endif
+
+
+
 <div class="w3-center" style="padding-top:150px;padding-bottom:60px">
   <img src="img/Logo KTF.PNG" alt="logo" style="max-width:500px;width:100%">
 </div>
@@ -26,16 +34,25 @@
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:324px;margin-bottom:100px;padding-top:50px;">
     <h2 class="w3-text-orange"style="padding-bottom:25px">Get in touch with us</h2>
-
-    <label>Your Name (Required)</label>
-    <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;">
-    <br>
-    <label>Your Email (Required)</label>
-    <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;">
-    <br>
-    <label>Your Message </label>
-    <textarea class="w3-input w3-border-0 w3-round-large" type="text" rows="5" style="margin-top:10px;"></textarea>
-    <button class="w3-btn w3-orange w3-text-white w3-display-bottomright" style="margin-right:50px;margin-bottom:50px">Submit</button>
+    @if (count($errors) > 0)
+      @foreach ($errors->all() as $error)
+        <div class="w3-panel w3-red">
+          <strong>Failed!</strong> {{$error}}
+        </div>
+      @endforeach
+    @endif
+    <form action="/sendMessage" method="post">
+      <label>Your Name (Required)</label>
+      <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="name">
+      <br>
+      <label>Your Email (Required)</label>
+      <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="email">
+      <br>
+      <label>Your Message </label>
+      <textarea class="w3-input w3-border-0 w3-round-large" type="text" rows="5" style="margin-top:10px;" name="message"></textarea>
+      <button class="w3-btn w3-orange w3-text-white w3-display-bottomright" style="margin-right:50px;margin-bottom:50px">Submit</button>
+      {{ csrf_field() }}
+    </form>
   </div>
 </div>
 

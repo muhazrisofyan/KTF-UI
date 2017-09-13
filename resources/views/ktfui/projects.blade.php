@@ -4,6 +4,19 @@
 
 @section('content')
 <br><br><br>
+@if(session()->has('message'))
+<div class="alert alert-success">
+    <strong>Success! </strong>{{ session()->get('message') }}
+</div>
+@endif
+
+@if (count($errors) > 0)
+  @foreach ($errors->all() as $error)
+    <div class="alert alert-danger">
+        <strong>Failed!</strong> {{$error}}
+    </div>
+  @endforeach
+@endif
 <div class="w3-row">
 	<!-- Header -->
   <header id="portfolio">
@@ -23,7 +36,7 @@
   <div class="w3-row-padding">
     @foreach ($projects as $project)
       <div class="w3-third w3-container w3-margin-bottom">
-  	    <a href="post"><img src="{{asset('storage/project_img/' . $project->id . '/1.png')}}" alt="Norway" width="425.33" height="281.77" class="w3-hover-opacity"></a>
+  	    <a href="/projects/{{$project->id}}"><img src="{{asset('storage/project_img/' . $project->id . '/1.png')}}" alt="Norway" width="425.33" height="281.77" class="w3-hover-opacity"></a>
         <div class="w3-container w3-white">
           <p><b>@if (strlen($project->title) > 50)
             {{substr($project->title, 0, 50)}}
