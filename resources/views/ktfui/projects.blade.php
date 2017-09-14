@@ -43,7 +43,7 @@
           @else
             {{$project->title}}
           @endif</b></p>
-          <p>{{$project->content}}</p>
+          <p>{{$project->snippet}}</p>
         </div>
       </div>
     @endforeach
@@ -92,12 +92,7 @@
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-orange">«</a>
-      <a href="#" class="w3-bar-item w3-orange w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-orange">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-orange">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-orange">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-orange">»</a>
+      {{$projects->appends(Request::input())->render()}}
     </div>
   </div>
 

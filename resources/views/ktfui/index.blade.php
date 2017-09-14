@@ -25,13 +25,13 @@
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-      <img class="w3-animate-fading" src="img/home 1.JPG" style="width:100%">
+      <img class="w3-animate-fading" src="{{asset("img/home/1.JPG")}}" style="width:100%">
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img class="w3-animate-fading" src="img/home 2.JPG" style="width:100%">
+      <img class="w3-animate-fading" src="{{asset("img/home/2.JPG")}}" style="width:100%">
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img class="w3-animate-fading" src="img/home 3.jpg" style="width:100%">
+      <img class="w3-animate-fading" src="{{asset("img/home/3.JPG")}}" style="width:100%">
     </div>
     <img src="img/bunga2an.png" class="w3-display-left w3-opacity-max" style="width:45%;z-index: -1">
     <img src="img/bunga3an.png" class="w3-display-bottomright w3-opacity-max" style="width:60%;z-index: -1">

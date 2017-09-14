@@ -39,6 +39,11 @@
                     </div>
 
                     <div class="form-group">
+                      <label for="snippet">Snippet</label>
+                      <input type="text" class="form-control" id="snippet" name="snippet" value="{{$project->title}}">
+                    </div>
+
+                    <div class="form-group">
                       <label for="content">Content</label>
                       <textarea class="form-control" rows="5" id="content" name="content">{{$project->content}}</textarea>
                     </div>

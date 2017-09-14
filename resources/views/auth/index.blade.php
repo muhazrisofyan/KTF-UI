@@ -9,10 +9,7 @@
   </div>
   <!-- /.row -->
   {{-- <div class="row"> --}}
-    <h1>Welcome, Admin!</h1>
-    <a href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-                 document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a>             {{-- </div> --}}
+    <h1>Welcome, Admin!</h1>        {{-- </div> --}}
   <!-- /.row -->
 
 @endsection

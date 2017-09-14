@@ -12,6 +12,7 @@ class ProjectController extends Controller
 
     $this->validate($req, [
       'title'   => 'required|max:100',
+      'snippet' => 'required|max:100',
       'content' => 'required',
       'photos'  => 'required'
     ]);
@@ -21,6 +22,7 @@ class ProjectController extends Controller
     $id = $ptable[$pcount - 1]['id'] + 1;
     $title = $req->title;
     $content = $req->content;
+    $snippet = $req->snippet;
 
     $counter = 1;
     foreach ($req->photos as $photo) {
@@ -33,7 +35,7 @@ class ProjectController extends Controller
     $project->id = $id;
     $project->title = $title;
     $project->content = $content;
-    $project->snippet = 'snippet-' . $id;
+    $project->snippet = $snippet;
     $project->save();
 
     return redirect()->back()->with('message', 'Project has been added!');
@@ -45,7 +47,7 @@ class ProjectController extends Controller
   }
 
   public function showIndex(Request $req){
-    $projects = Projects::all();
+    $projects = Projects::paginate(6);
     return view('ktfui.projects', ['projects'=>$projects]);
   }
 
@@ -73,6 +75,7 @@ class ProjectController extends Controller
   {
     $this->validate($req, [
       'title'   => 'required|max:100',
+      'snippet' => 'required|max:100',
       'content' => 'required'
     ]);
 
@@ -84,12 +87,9 @@ class ProjectController extends Controller
       }
     }
 
-
-    $title = $req->title;
-    $content = $req->content;
-
     Projects::find($id)->update([
       'title' => $req->title,
+      'snippet' => $req->snippet,
       'content' => $req->content
     ]);
 

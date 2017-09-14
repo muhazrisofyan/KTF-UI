@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="icon" href="ktfui/img/logo.jpeg">
     <style>
     body,h1 {font-family: "Raleway", sans-serif}
     body, html {height: 100%}
@@ -17,7 +16,7 @@
     }
     </style>
     <body>
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white"> 
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
       <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
         <h1 class="w3-jumbo w3-animate-top w3-hide-small" style="white-space:nowrap">KTFUI RADHA SARISHA</h1>
         <h5 class="w3-hide-large" style="white-space:nowrap">KTFUI</h5>
