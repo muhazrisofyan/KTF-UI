@@ -18,7 +18,7 @@
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     @if ($page == $paginator->currentPage())
-                        <a class="w3-button active"><span>{{ $page }}</span></a>
+                        <a class="w3-button w3-orange active"><span>{{ $page }}</span></a>
                     @else
                         <a class="w3-button" href="{{ $url }}">{{ $page }}</a>
                     @endif
