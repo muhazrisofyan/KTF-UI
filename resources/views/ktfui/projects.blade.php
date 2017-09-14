@@ -91,7 +91,7 @@
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
+    <div class="w3-bar" style="">
       {{$projects->appends(Request::input())->render()}}
     </div>
   </div>
