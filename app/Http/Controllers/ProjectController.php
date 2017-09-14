@@ -19,7 +19,12 @@ class ProjectController extends Controller
 
     $ptable = Projects::all();
     $pcount = Projects::count();
-    $id = $ptable[$pcount - 1]['id'] + 1;
+    if ($pcount == 0) {
+      $id = 1;
+    }else {
+      $id = $ptable[$pcount - 1]['id'] + 1;
+    }
+
     $title = $req->title;
     $content = $req->content;
     $snippet = $req->snippet;
