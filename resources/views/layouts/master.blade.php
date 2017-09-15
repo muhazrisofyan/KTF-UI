@@ -44,6 +44,7 @@
   }
   </style>
   <link rel="stylesheet" href="/css/master.css" >
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body onload="updateNavBar()">
 <!-- Navbar -->

@@ -11,7 +11,7 @@
 </div>
 
 <div class="w3-row w3-container">
-  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:300px;margin-bottom:100px;padding-top:50px;">
+  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:358px;margin-bottom:0px;padding-top:50px;">
     <h2>Get Social</h2>
     <div class="w3-row">
       <div class="w3-container w3-xlarge w3-center">
@@ -28,7 +28,7 @@
     <br>
     <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  {{$email}}</i></span>
   </div>
-  <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:224px;margin-bottom:100px;padding-top:50px;">
+  <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:150px;margin-bottom:100px;padding-top:50px;">
     @if (count($errors) > 0)
       @foreach ($errors->all() as $error)
         <div class="w3-panel w3-red">
@@ -44,14 +44,17 @@
     <h2 class="w3-text-orange"style="padding-bottom:25px">Get in touch with us</h2>
 
     <form action="/sendMessage" method="post">
-      <label>Your Name (Required)</label>
+      <label>Your Name <span class="w3-text-red">*</span></label>
       <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="name">
       <br>
-      <label>Your Email (Required)</label>
+      <label>Your Email <span class="w3-text-red">*</span></label>
       <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="email">
       <br>
-      <label>Your Message </label>
+      <label>Your Message <span class="w3-text-red">*</span></label>
       <textarea class="w3-input w3-border-0 w3-round-large" type="text" rows="5" style="margin-top:10px;" name="message"></textarea>
+      <br>
+      <label>Please verify that you are human <span class="w3-text-red">*</span></label>
+      <div class="g-recaptcha" style="margin-top:10px" data-sitekey="6LdUwTAUAAAAAMkOg3qGznAVTQ1hxP5FxFvXzTQM"></div>
       <button class="w3-btn w3-orange w3-text-white w3-display-bottomright" style="margin-right:50px;margin-bottom:50px">Submit</button>
       {{ csrf_field() }}
     </form>
