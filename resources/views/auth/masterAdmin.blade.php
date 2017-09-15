@@ -25,7 +25,7 @@
     <link href="/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS for Add project -->
     <link rel="stylesheet" href="/css/adminaddproj.css">
@@ -65,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="radhasarisha">Admin Page KTF UI - Radha Sarisha</a>
+                <h6 class="navbar-brand" href="radhasarisha" style="margin-bottom:-10px;margin-top:-3px">Admin Page KTF UI - Radha Sarisha</h6>
             </div>
             <!-- /.navbar-header -->
 
@@ -119,7 +119,7 @@
                             <a href="/radhasarisha/manageprojects3"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>
                         </li>
                         <li>
-                            <a href="/radhasarisha/messages"><i class="fa fa-edit fa-fw"></i> Messages</a>
+                            <a href="/radhasarisha/messages"><i class="fa fa-edit fa-fw"></i> Messages</i></a>
                         </li>
                     </ul>
                 </div>
