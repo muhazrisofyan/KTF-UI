@@ -2,10 +2,6 @@
 
 @section('content')
 
-
-
-
-
 <div class="w3-center" style="padding-top:150px;padding-bottom:60px">
   <img src="img/Logo KTF.PNG" alt="logo" style="max-width:500px;width:100%">
 </div>
@@ -30,14 +26,12 @@
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:150px;margin-bottom:100px;padding-top:50px;">
     @if (count($errors) > 0)
-      @foreach ($errors->all() as $error)
-        <div class="w3-panel w3-red">
-          <strong>Failed!</strong> {{$error}}
+        <div class="w3-panel w3-pale-red w3-text-red w3-border-red w3-border w3-round-large" style="margin-top:-30px">
+          <strong>Failed!</strong> Please fill in the required fields
         </div>
-      @endforeach
     @endif
     @if(session()->has('message'))
-    <div class="w3-panel w3-green" style="margin-top:-22px">
+    <div class="w3-panel w3-pale-green w3-text-green w3-border w3-border-green w3-round-large" style="margin-top:-30px">
       <strong>Success! </strong>{{ session()->get('message') }}
     </div>
     @endif
@@ -55,7 +49,7 @@
       <br>
       <label>Please verify that you are human <span class="w3-text-red">*</span></label>
       <div class="g-recaptcha" style="margin-top:10px" data-sitekey="6LdUwTAUAAAAAMkOg3qGznAVTQ1hxP5FxFvXzTQM"></div>
-      <button class="w3-btn w3-orange w3-text-white w3-display-bottomright" style="margin-right:50px;margin-bottom:50px">Submit</button>
+      <button class="w3-btn w3-orange w3-text-white w3-display-bottomright w3-round-large" style="margin-right:50px;margin-bottom:50px">Submit</button>
       {{ csrf_field() }}
     </form>
   </div>
