@@ -42,9 +42,14 @@
         ]) !!};
     </script>
 
+    <link rel="stylesheet" href="{{asset('/dist/summernote.min.css')}}">
+    {{-- <script src="{{asset('/assets/dist/summernote.min.css')}}"></script> --}}
+
+    <script src="{{asset('/dist/summernote.min.js')}}"></script>
+
     <!-- jquery for file upload interface-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/addProjectJs.js"></script>
+    <script type="text/javascript" src="{{asset('/js/addProjectJs.js')}}"></script>
 </head>
 
 <body>
@@ -132,22 +137,29 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="{{asset('/vendor/jquery/jquery.min.js')}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="{{asset('/vendor/metisMenu/metisMenu.min.js')}}"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="/vendor/raphael/raphael.min.js"></script>
-    <script src="/vendor/morrisjs/morris.min.js"></script>
+    <script src="{{asset('/vendor/raphael/raphael.min.js')}}"></script>
+    <script src="{{asset('/vendor/morrisjs/morris.min.js')}}"></script>
     <script src="/data/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/dist/js/sb-admin-2.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{asset('/dist/js/sb-admin-2.js')}}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('#summernote').summernote({
+                  height:300,
+                });
+            });
+        </script>
 
 </body>
 
