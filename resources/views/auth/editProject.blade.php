@@ -50,10 +50,24 @@
 
                     <div class="form-group">
                       @foreach ($images as $image)
-                        <img src="{{asset('storage/project_img/' . $project->id . '/' . $image)}}" alt="Norway" width="100" height="100">
+                        {{-- <img src="{{asset('storage/project_img/' . $project->id . '/' . $image)}}" alt="Norway" width="100" height="100">
                         <br><a href="/project/deleteImage/{{$project->id}}/{{$image}}"><button type="button" class="btn btn-danger">Delete</button></a>
-                        <br>
+                        <br> --}}
+                        <article class="col-xs-12 col-md-2">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <a href="{{asset('storage/project_img/' . $project->id . '/' . $image)}}" class="zoom" data-type="image" data-toggle="lightbox">
+                                        <img src="{{asset('storage/project_img/' . $project->id . '/' . $image)}}" alt="Norway" width="123" height="100">
+                                    </a>
+                                </div>
+                                <div class="panel-footer text-center">
+                                    <a href="/project/deleteImage/{{$project->id}}/{{$image}}"><button type="button" class="btn btn-danger">Delete</button></a>
+                                </div>
+                            </div>
+                        </article>
+
                       @endforeach
+
                       <br>
                       <label for="comment">Add Images (can attach more than one):</label>
                       <input type="file" id="pictures" name="photos[]" multiple/ >

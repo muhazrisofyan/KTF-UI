@@ -99,7 +99,7 @@ class ProjectController extends Controller
     ]);
 
 
-    return redirect('/radhasarisha/manageProjects')->with('message', 'Post with id ' . $id . ' has been updated!');
+    return redirect()->back()->with('message', 'Post with id ' . $id . ' has been updated!');
   }
 
   public function delete($id){
