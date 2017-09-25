@@ -60,10 +60,10 @@
       <a href="#" class="w3-button w3-black w3-right"><i class="fa fa-search"></i></a>
       <input type="text" class="w3-col s9 w3-bar-item w3-input w3-right" placeholder="Search..">
     </div>
-		<a id="contact" href="contact" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
-		<a id="services" href="services" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
-		<a id="projects" href="projects" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Projects</a>
-		<a id="profile" href="profile1" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
+		<a id="contact" href="{{url('/contact')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
+		<a id="services" href="{{url('/services')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
+		<a id="projects" href="{{url('/projects')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Projects</a>
+		<a id="profile" href="{{(url('/profile1'))}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
   </div>
 </div>
 <!-- Navbar on small screens -->

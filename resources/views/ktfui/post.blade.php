@@ -22,7 +22,7 @@
     </div>
 
     <div class="w3-container">
-      <p>{{$project->content}}</p>
+      <p>{!!$project->content!!}</p>
       <div class="w3-row">
       </div>
     </div>
