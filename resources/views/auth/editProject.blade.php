@@ -68,7 +68,12 @@
 
                       @endforeach
 
-                      <br>
+
+
+                    </div>
+                    <br>
+                    
+                    <div class="form-group">
                       <label for="comment">Add Images (can attach more than one):</label>
                       <input type="file" id="pictures" name="photos[]" multiple/ >
                     </div>
