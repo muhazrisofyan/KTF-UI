@@ -34,6 +34,7 @@
                         <th>Email</th>
                         <th>Messages</th>
                         <th>Time</th>
+                        <th></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -46,11 +47,12 @@
                         <td>{{$message->messages}}</td>
 
 
-                        <td class="pull-right">
+                        <td>
                           {{-- <a href="/radhasarisha/editProject/{{$project->id}}"><button type="button" class="btn btn-warning">Edit</button></a>
                           <a href="/project/delete/{{$project->id}}"><button type="button" class="btn btn-danger">Delete</button></a> --}}
                           {{$message->created_at}}
                         </td>
+                        <td class = "pull-right"><a href="#"><button type="button" class="btn btn-danger">Delete</button></a></td>
                       </tr>
 
                       @endforeach

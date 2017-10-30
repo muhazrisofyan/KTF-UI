@@ -45,9 +45,9 @@ Route::get('/download', 'Controller@getDownload');
 Route::prefix('radhasarisha')->group(function(){
   Auth::routes();
 
-  Route::match(['get', 'post'], 'register', function(){
-    return redirect('/radhasarisha/login');
-  });
+  // Route::match(['get', 'post'], 'register', function(){
+  //   return redirect('/radhasarisha/login');
+  // });
 
   Route::get('/home', 'HomeController@index')->middleware('auth');
 
@@ -56,6 +56,8 @@ Route::prefix('radhasarisha')->group(function(){
   })->middleware('auth');
 
   Route::get('/manageProjects', 'ProjectController@show')->middleware('auth');
+
+  Route::get('/manageProfile', 'ProfileController@show')->middleware('auth');
 
   Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
 

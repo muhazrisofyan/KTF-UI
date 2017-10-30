@@ -51,7 +51,6 @@
                         <td class="pull-right">
                           <a href="/radhasarisha/editProject/{{$project->id}}"><button type="button" class="btn btn-warning">Edit</button></a>
                           <a href="/project/delete/{{$project->id}}"><button type="button" class="btn btn-danger">Delete</button></a>
-
                         </td>
                       </tr>
 

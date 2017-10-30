@@ -35,17 +35,17 @@
                   <div class="panel-body">
                     <div class="form-group">
                       <label for="title">Title</label>
-                      <input type="text" class="form-control" id="title" name="title" value="{{old('title')}}">
+                      <input type="text" class="form-control" id="title" name="title" placeholder="Project Title" value="{{old('title')}}">
                     </div>
 
                     <div class="form-group">
                       <label for="snippet">Snippet</label>
-                      <input type="text" class="form-control" id="snippet" name="snippet" value="{{old('snippet')}}">
+                      <input type="text" class="form-control" id="snippet" name="snippet" placeholder="Project Snippet" value="{{old('snippet')}}">
                     </div>
 
                     <div class="form-group">
                       <label for="content">Content</label>
-                      <textarea class="form-control summernote" rows="5" id="summernote" name="content">{{old('content')}}</textarea>
+                      <textarea class="form-control summernote" rows="5" id="summernote" name="content" placeholder="Project Content">{{old('content')}}</textarea>
                     </div>
 
                     <div class="form-group">
@@ -56,7 +56,7 @@
                   </div>
 
                   <div class="panel-footer">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary">Create</button>
                       {{ csrf_field() }}
                   </div>
                 </form>

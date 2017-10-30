@@ -16,8 +16,7 @@ class MessagesController extends Controller
     $this->validate($req, [
       'name'   => 'required|max:25',
       'email' => 'required',
-      'message'  => 'required',
-      'g-recaptcha-response' => 'required'
+      'message'  => 'required'
     ]);
 
     $message = new Messages;

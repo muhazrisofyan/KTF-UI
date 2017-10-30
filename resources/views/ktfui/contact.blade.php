@@ -7,7 +7,11 @@
 </div>
 
 <div class="w3-row w3-container">
-  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:358px;margin-bottom:0px;padding-top:50px;">
+  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:358px;margin-bottom:0px;padding-top:0px;">
+    <h2 style="padding-top:60px">Contact Info</h2>
+    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
+    <br>
+    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  {{$email}}</i></span>
     <h2>Get Social</h2>
     <div class="w3-row">
       <div class="w3-container w3-xlarge w3-center">
@@ -19,10 +23,6 @@
         </span>
       </div>
     </div>
-    <h2 style="padding-top:60px">Contact Info</h2>
-    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
-    <br>
-    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  {{$email}}</i></span>
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:150px;margin-bottom:100px;padding-top:50px;">
     @if (count($errors) > 0)

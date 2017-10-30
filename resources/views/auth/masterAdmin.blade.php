@@ -55,7 +55,6 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script>tinymce.init({ selector:'textarea' });</script>
-    >
 
 <!-- include summernote css/js-->
 </head>
@@ -122,6 +121,9 @@
                         </li>
                         <li>
                             <a href="/radhasarisha/manageProjects"><i class="fa fa-gear fa-fw"></i> Manage Projects</a>
+                        </li>
+                        <li>
+                            <a href="/radhasarisha/manageProfile"><i class="fa fa-gear fa-fw"></i> Manage Profile</a>
                         </li>
                         <li>
                             <a href="/radhasarisha/manageprojects3"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>

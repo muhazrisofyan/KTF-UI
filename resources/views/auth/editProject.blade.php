@@ -40,7 +40,7 @@
 
                     <div class="form-group">
                       <label for="snippet">Snippet</label>
-                      <input type="text" class="form-control" id="snippet" name="snippet" value="{{$project->title}}">
+                      <input type="text" class="form-control" id="snippet" name="snippet" value="{{$project->snippet}}">
                     </div>
 
                     <div class="form-group">
@@ -72,7 +72,7 @@
 
                     </div>
                     <br>
-                    
+
                     <div class="form-group">
                       <label for="comment">Add Images (can attach more than one):</label>
                       <input type="file" id="pictures" name="photos[]" multiple/ >
