@@ -59,7 +59,7 @@ Route::prefix('radhasarisha')->group(function(){
 
   Route::get('/manageProfile', 'ProfileController@show')->middleware('auth');
 
-  Route::get('/manageprojects3', 'CPController@showw')->middleware('auth');
+  Route::get('/editCP', 'CPController@show2')->middleware('auth');
 
   Route::get('/editProject/{id}', 'ProjectController@showId')->middleware('auth');
 

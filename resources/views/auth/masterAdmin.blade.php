@@ -126,7 +126,7 @@
                             <a href="/radhasarisha/manageProfile"><i class="fa fa-gear fa-fw"></i> Manage Profile</a>
                         </li>
                         <li>
-                            <a href="/radhasarisha/manageprojects3"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>
+                            <a href="/radhasarisha/editCP"><i class="fa fa-edit fa-fw"></i> Edit Contact Person</a>
                         </li>
                         <li>
                             <a href="/radhasarisha/messages"><i class="fa fa-edit fa-fw"></i> Messages</i></a>

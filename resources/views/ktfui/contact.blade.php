@@ -7,11 +7,11 @@
 </div>
 
 <div class="w3-row w3-container">
-  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:358px;margin-bottom:0px;padding-top:0px;">
+  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:405px;margin-bottom:0px;padding-top:0px;">
     <h2 style="padding-top:60px">Contact Info</h2>
     <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
     <br>
-    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px">  {{$email}}</i></span>
+    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px;padding-bottom:25px;">  {{$email}}</i></span>
     <h2>Get Social</h2>
     <div class="w3-row">
       <div class="w3-container w3-xlarge w3-center">

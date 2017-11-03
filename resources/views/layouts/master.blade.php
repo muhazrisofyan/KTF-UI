@@ -45,8 +45,13 @@
   </style>
   <link rel="stylesheet" href="/css/master.css" >
   <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/js/master.js"></script>
+
+  </script>
 </head>
 <body onload="updateNavBar()">
+  <div id="preloader"></div>
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2">
@@ -89,6 +94,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+
+
 /* //Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();

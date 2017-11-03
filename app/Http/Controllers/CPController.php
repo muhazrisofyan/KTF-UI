@@ -40,14 +40,14 @@ class CPController extends Controller
 
     }
 
-    public function showw()
+    public function show2()
     {
       $tab = cp::all();
       $nama = $tab[0]['nama'];
       $phonenumber = $tab[0]['hp'];
       $email = $tab[0]['email'];
 
-      return view('auth.manageProjects3',['nama'=>$nama,'phonenumber'=>$phonenumber, 'email'=>$email]);
+      return view('auth.editCP',['nama'=>$nama,'phonenumber'=>$phonenumber, 'email'=>$email]);
 
     }
 }
