@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-  <div class="w3-container" style="margin-top:80px">
+  <br><br><br>
+  <h1 class="w3-jumbo w3-text-orange w3-center w3-stackyard" style="margin-top:40px"><b>Our Profile</b></h1>
+  <div class="w3-container" style="margin-top:10px">
 
     {{-- Profile 1 --}}
     <div id="1" class="mySlides fade">
@@ -128,7 +130,7 @@
           <img src="img/bunga3an.png" class="w3-display-right w3-opacity-max" style="width:60%;z-index: -1">
         {{-- Start introduction --}}
         <div class="w3-content" style="padding-top:20px;text-align:justify">
-          <p>Tari tradisional Indonesia mencerminkan kekayaan dan keanekaragaman bangsa Indonesia. Beberapa tradisi seni tari seperti; tarian Bali, tarian Jawa, tarian Sunda, tarian Minangkabau, tarian Palembang, tarian Melayu, tarian Aceh, dan masih banyak lagi adalah seni tari yang berkembang sejak dahulu kala, meskipun demikian tari ini tetap dikembangkan hingga kini. Beberapa tari mungkin telah berusia ratusan tahun, sementara beberapa tari berlanggam tradisional mungkin baru diciptakan kurang dari satu dekade yang lalu. Penciptaan tari dengan koreografi baru, tetapi masih di dalam kerangka disiplin tradisi tari tertentu masih dimungkinkan. Sebagai hasilnya, muncullah beberapa tari kreasi baru. Tari kreasi baru ini dapat merupakan penggalian kembali akar-akar budaya yang telah sirna, penafsiran baru, inspirasi atau eksplorasi seni baru atas seni tari tradisional.</p>
+          <p>Tari tradisional Malaysia mencerminkan kekayaan dan keanekaragaman bangsa Indonesia. Beberapa tradisi seni tari seperti; tarian Bali, tarian Jawa, tarian Sunda, tarian Minangkabau, tarian Palembang, tarian Melayu, tarian Aceh, dan masih banyak lagi adalah seni tari yang berkembang sejak dahulu kala, meskipun demikian tari ini tetap dikembangkan hingga kini. Beberapa tari mungkin telah berusia ratusan tahun, sementara beberapa tari berlanggam tradisional mungkin baru diciptakan kurang dari satu dekade yang lalu. Penciptaan tari dengan koreografi baru, tetapi masih di dalam kerangka disiplin tradisi tari tertentu masih dimungkinkan. Sebagai hasilnya, muncullah beberapa tari kreasi baru. Tari kreasi baru ini dapat merupakan penggalian kembali akar-akar budaya yang telah sirna, penafsiran baru, inspirasi atau eksplorasi seni baru atas seni tari tradisional.</p>
         </div>
         {{-- End of Introduction --}}
 
@@ -246,7 +248,7 @@
           <img src="img/bunga3an.png" class="w3-display-right w3-opacity-max" style="width:60%;z-index: -1">
         {{-- Start introduction --}}
         <div class="w3-content" style="padding-top:20px;text-align:justify">
-          <p>Tari tradisional Indonesia mencerminkan kekayaan dan keanekaragaman bangsa Indonesia. Beberapa tradisi seni tari seperti; tarian Bali, tarian Jawa, tarian Sunda, tarian Minangkabau, tarian Palembang, tarian Melayu, tarian Aceh, dan masih banyak lagi adalah seni tari yang berkembang sejak dahulu kala, meskipun demikian tari ini tetap dikembangkan hingga kini. Beberapa tari mungkin telah berusia ratusan tahun, sementara beberapa tari berlanggam tradisional mungkin baru diciptakan kurang dari satu dekade yang lalu. Penciptaan tari dengan koreografi baru, tetapi masih di dalam kerangka disiplin tradisi tari tertentu masih dimungkinkan. Sebagai hasilnya, muncullah beberapa tari kreasi baru. Tari kreasi baru ini dapat merupakan penggalian kembali akar-akar budaya yang telah sirna, penafsiran baru, inspirasi atau eksplorasi seni baru atas seni tari tradisional.</p>
+          <p>Tari tradisional Inggris mencerminkan kekayaan dan keanekaragaman bangsa Indonesia. Beberapa tradisi seni tari seperti; tarian Bali, tarian Jawa, tarian Sunda, tarian Minangkabau, tarian Palembang, tarian Melayu, tarian Aceh, dan masih banyak lagi adalah seni tari yang berkembang sejak dahulu kala, meskipun demikian tari ini tetap dikembangkan hingga kini. Beberapa tari mungkin telah berusia ratusan tahun, sementara beberapa tari berlanggam tradisional mungkin baru diciptakan kurang dari satu dekade yang lalu. Penciptaan tari dengan koreografi baru, tetapi masih di dalam kerangka disiplin tradisi tari tertentu masih dimungkinkan. Sebagai hasilnya, muncullah beberapa tari kreasi baru. Tari kreasi baru ini dapat merupakan penggalian kembali akar-akar budaya yang telah sirna, penafsiran baru, inspirasi atau eksplorasi seni baru atas seni tari tradisional.</p>
         </div>
         {{-- End of Introduction --}}
 

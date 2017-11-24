@@ -65,10 +65,11 @@
       <a href="#" class="w3-button w3-black w3-right"><i class="fa fa-search"></i></a>
       <input type="text" class="w3-col s9 w3-bar-item w3-input w3-right" placeholder="Search..">
     </div>
-		<a id="contact" href="{{url('/contact')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
-		<a id="services" href="{{url('/services')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
-		<a id="projects" href="{{url('/projects')}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Projects</a>
-		<a id="profile" href="{{(url('/profile1'))}}" class="w3-text-grey w3-hover-text-black w3-bar-item w3-btn w3-round-large w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
+		<a id="contact" href="{{url('/contact')}}" class="link hvr-grow w3-text-grey w3-hover-text-black w3-bar-item w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Contact</a>
+		<a id="services" href="{{url('/services')}}" class="link hvr-grow w3-text-grey w3-hover-text-black w3-bar-item w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Services</a>
+		<a id="projects" href="{{url('/projects')}}" class="link hvr-grow w3-text-grey w3-hover-text-black w3-bar-item w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Projects</a>
+		<a id="profile" href="{{(url('/profile1'))}}" class="link hvr-grow w3-text-grey w3-hover-text-black w3-bar-item w3-padding-large w3-hide-small w3-right w3-dinmed w3-margin">Profile</a>
+    <a id="home" href="{{(url('/ktfui'))}}" class="hvr-grow w3-text-grey w3-hover-text-black w3-padding-small w3-hide-small w3-right w3-margin"><i class="w3-text-orange fa fa-home" aria-hidden="true" style="font-size:40px"></i></a>
   </div>
 </div>
 <!-- Navbar on small screens -->
@@ -85,11 +86,11 @@
 <!-- Footer -->
 <img class="w3-opacity" src="{{ asset('img/foto bawah.jpg') }}" alt="Lights" style="width:100%">
 <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-  <a target="_blank" href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity" style="font-size:40px"></i></a>
+  <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity" style="font-size:40px"></i></a>
+  <a target="_blank" href="https://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity" style="font-size:40px"></i></a>
+  <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size:40px"></i></a>
+
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

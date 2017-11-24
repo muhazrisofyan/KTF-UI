@@ -2,9 +2,9 @@
 
 @section('content')
 <br><br><br>
-<h1 class="w3-jumbo w3-text-orange w3-center w3-stackyard"><b>Our Services</b></h1>
+<h1 class="w3-jumbo w3-text-orange w3-center w3-stackyard" style="margin-top:40px"><b>Our Services</b></h1>
 <!-- Page content -->
-<div class="w3-padding-64 w3-orange" style="z-index: 1" >
+<div class="w3-padding-64 w3-orange" style="z-index: 1;margin-top:20px" >
 	<div class="w3-row-padding">
     <div class="w3-col l8 m6">
       <h1 style="z-index: 1" class="w3-xxxlarge w3-text-light-grey w3-dinlight"><b>Traditional and Modern Dance Performance</b></h1>
