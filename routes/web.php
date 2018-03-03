@@ -77,3 +77,5 @@ Route::prefix('project')->group(function(){
 Route::post('/contactupdate', 'CPController@change');
 
 Route::post('/sendMessage', 'MessagesController@send');
+
+Route::get('/deleteMessage/{id}', 'MessagesController@delete');

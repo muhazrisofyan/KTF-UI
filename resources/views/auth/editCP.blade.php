@@ -4,6 +4,10 @@
   <div class="row">
     @if(session()->has('message'))
     <div class="alert alert-success">
+      <span class="fa-stack fa-lg close-button">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+      </span>
         <strong>Success! </strong>{{ session()->get('message') }}
     </div>
     @endif
@@ -11,6 +15,10 @@
     @if (count($errors) > 0)
       @foreach ($errors->all() as $error)
         <div class="alert alert-danger">
+          <span class="fa-stack fa-lg close-button">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+          </span>
             <strong>Failed!</strong> {{$error}}
         </div>
       @endforeach

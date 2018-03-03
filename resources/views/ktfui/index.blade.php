@@ -31,7 +31,7 @@
       <img class="w3-animate-fading" src="{{asset("img/home/2.JPG")}}" style="width:100%">
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img class="w3-animate-fading" src="{{asset("img/home/3.JPG")}}" style="width:100%">
+      <img class="w3-animate-fading" src="{{asset("img/home/3.jpg")}}" style="width:100%">
     </div>
     <img src="img/bunga2an.png" class="w3-display-left w3-opacity-max" style="width:45%;z-index: -1">
     <img src="img/bunga3an.png" class="w3-display-bottomright w3-opacity-max" style="width:60%;z-index: -1">
@@ -60,24 +60,24 @@
     <!-- The Tour Section -->
     <div class="" id="tour">
       <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
-  	  <div class="w3-col m6 w3-large w3-margin-bottom" >
+    	  <div class="w3-col m6 w3-large w3-margin-bottom" >
 
         </div>
-  	   <div class="w3-col m6 w3-large w3-margin-bottom">
-  	   <h4 class="w3-text-orange w3-dinlight">Komunitas Tari FISIP UI</h4>
-  	   <h2 class="w3-text-orange w3-identica">/Radha Sarisha/</h2>
-  	   <h6 class="w3-dinlight">A professional dance community in Faculty of Social and Political
-  		  Sciences, Universitas Indonesia that embody and develop interests and talents of students in the art of dance, both traditional and modern,
-  		  also traditional music</h6>
+    	  <div class="w3-col m6 w3-large w3-margin-bottom">
+    	    <h4 class="w3-text-orange w3-dinlight">Komunitas Tari FISIP UI</h4>
+    	    <h2 class="w3-text-orange w3-identica">/Radha Sarisha/</h2>
+    	    <h6 class="w3-dinlight">A professional dance community in Faculty of Social and Political
+    		  Sciences, Universitas Indonesia that embody and develop interests and talents of students in the art of dance, both traditional and modern,
+    		  also traditional music</h6>
 
-  		<h6 class="w3-dinlight">Established in July 2008, KTF Radha Sarisha consists of (more or less)
-  		   100 members, which are FISIP UI students who have passion in dance and
-  		   music. Our performance experiences &amp; projects diverse both in national and
-  		   international scale</h6>
-  		<a href="/download" class="w3-cyan w3-border w3-round-xlarge w3-btn w3-margin"><span style="color:white">Company Profile</span></a>
+    		  <h6 class="w3-dinlight">Established in July 2008, KTF Radha Sarisha consists of (more or less)
+    		   100 members, which are FISIP UI students who have passion in dance and
+    		   music. Our performance experiences &amp; projects diverse both in national and
+    		   international scale</h6>
+    		  <a href="/download" class="w3-cyan w3-border w3-round-xlarge w3-btn w3-margin"><span style="color:white">Company Profile</span></a>
         </div>
+      </div>
     </div>
-
   <!-- End Page Content -->
   </div>
 
