@@ -6,23 +6,24 @@
   <img src="img/Logo KTF.PNG" alt="logo" style="max-width:500px;width:100%">
 </div>
 
-<div class="w3-row w3-container">
-  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:405px;margin-bottom:0px;padding-top:0px;">
-    <h2 style="padding-top:60px">Contact Info</h2>
-    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
-    <br>
-    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px;padding-bottom:25px;">  {{$email}}</i></span>
+<div class="row w3-row w3-container">
+  <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:150px;margin-bottom:100px;padding-top:0px;">
     <h2>Get Social</h2>
     <div class="w3-row">
       <div class="w3-container w3-xlarge w3-center">
         <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity contactimage"></i></a>
         <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity contactimage"></i></a>
         <span class="w3-mobile">
-        <a target="_blank" href="hhttps://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity contactimage"></i></a>
         <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity contactimage"></i></a>
         </span>
       </div>
     </div>
+    <h2 style="padding-top:60px">Contact Info</h2>
+    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
+    <br>
+    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px;padding-bottom:25px;">  {{$email}}</i></span>
+
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:150px;margin-bottom:100px;padding-top:50px;">
     @if (count($errors) > 0)

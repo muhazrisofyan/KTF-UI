@@ -216,3 +216,10 @@
 .link{
   text-decoration: none;
 }
+
+/* side by side div with equal height */
+@media only screen and (min-width: 1026px) {
+.row {
+  display: flex; /* equal height of the children */
+}
+}
