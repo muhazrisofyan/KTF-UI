@@ -44,15 +44,15 @@
       <div class="w3-row w3-padding-16 w3-text-orange">
         <div class="w3-third">
           <a href="profile1"><img src="{{url('img/traditional dance.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%"></a>
-  		<h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight w3-">dance</h4>
+  		    <h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight">dance</h4>
         </div>
         <div class="w3-third">
           <a href="profile2"><img src="{{url('img/modern dance.png')}}" class="w3-btn w3-circle" alt="Random Name" style="width:80%"></a>
-  		<h1 class="w3-stackyard">Modern</h1><h4 class="w3-dinlight">dance</h4>
+  		    <h1 class="w3-stackyard">Modern</h1><h4 class="w3-dinlight">dance</h4>
         </div>
-  	  <div class="w3-third">
+  	     <div class="w3-third">
           <a href="profile3" ><img src="{{url('img/traditional music.png')}}" class="w3-circle w3-btn" alt="Random Name" style="width:80%"></a>
-  		<h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight">music</h4>
+  		    <h1 class="w3-stackyard">Traditional</h1><h4 class="w3-dinlight">music</h4>
         </div>
       </div>
     </div>
