@@ -61,6 +61,21 @@
                       <input type="file" id="pictures" name="photos[]" multiple/ >
                     </div>
 
+                    <div class="form-group" style="width:300px">
+                      <label for="room">Choose Tag</label>
+                      <select id="room" class="form-control" name="room" required>
+                        <option value="" disabled selected></option>
+                        <option value="Misi Budaya">Misi Budaya</option>
+                        <option value="Pagelaran">Pagelaran</option>
+                        <option value="Lomba">Lomba</option>
+                      </select>
+                    </div>
+                    <div class="form-group" style="width:80px">
+                      <button id="add" type="button" name="button" class="form-control btn btn-default pull-right">Add Tag</button>
+                    </div>
+                    <div id="container" class="form-group">
+                      <label>Added Tag</label>
+                    </div>
                   </div>
 
                   <div class="panel-footer">

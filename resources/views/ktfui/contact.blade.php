@@ -8,21 +8,21 @@
 
 <div class="row w3-row w3-container">
   <div class="w3-orange w3-text-white w3-container w3-third" style="padding-bottom:150px;margin-bottom:100px;padding-top:0px;">
-    <h2>Get Social</h2>
+    <h1 class="w3-stackyard" style="margin-top:60px">Get Social</h1>
     <div class="w3-row">
       <div class="w3-container w3-xlarge w3-center">
-        <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fa fa-instagram w3-hover-opacity contactimage"></i></a>
-        <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fa fa-youtube w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://www.instagram.com/ktfui/"><i class="fab fa-instagram w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://www.youtube.com/user/KTFfisipUI08"><i class="fab fa-youtube w3-hover-opacity contactimage"></i></a>
         <span class="w3-mobile">
-        <a target="_blank" href="https://twitter.com/ktfui"><i class="fa fa-twitter w3-hover-opacity contactimage"></i></a>
-        <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fa fa-facebook-official w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://twitter.com/ktfui"><i class="fab fa-twitter w3-hover-opacity contactimage"></i></a>
+        <a target="_blank" href="https://www.facebook.com/ktf.ui.radhasarisha"><i class="fab fa-facebook-square w3-hover-opacity contactimage"></i></a>
         </span>
       </div>
     </div>
-    <h2 style="padding-top:60px">Contact Info</h2>
-    <span class="contactinfo"><i class="fa fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
+    <h1 class="w3-stackyard" style="padding-top:60px">Contact Info</h1>
+    <span class="contactinfo w3-dinmed"><i class="fas fa-phone" style="margin-left:80px;margin-top:0px;padding-top:25px">  {{$nama}} ({{$phonenumber}})</i></span>
     <br>
-    <span class="contactinfo"><i class="fa fa-envelope" style="margin-left:80px;padding-bottom:25px;">  {{$email}}</i></span>
+    <span class="contactinfo w3-dinmed"><i class="fas fa-envelope" style="margin-left:80px;padding-bottom:25px;">  {{$email}}</i></span>
 
   </div>
   <div class="w3-container w3-twothird w3-light-grey w3-display-container" style="padding-bottom:150px;margin-bottom:100px;padding-top:50px;">
@@ -36,19 +36,19 @@
       <strong>Success! </strong>{{ session()->get('message') }}
     </div>
     @endif
-    <h2 class="w3-text-orange"style="padding-bottom:25px">Get in touch with us</h2>
+    <h1 class="w3-text-orange w3-stackyard" style="padding-bottom:25px">Get in touch with us</h1>
 
     <form action="/sendMessage" method="post">
-      <label>Your Name <span class="w3-text-red">*</span></label>
-      <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="name">
+      <label class="w3-dinmed">Your Name <span class="w3-text-red">*</span></label>
+      <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="name" autofocus>
       <br>
-      <label>Your Email <span class="w3-text-red">*</span></label>
+      <label class="w3-dinmed">Your Email <span class="w3-text-red">*</span></label>
       <input class="w3-input w3-border-0 w3-round-large" type="text" style="margin-top:10px;" name="email">
       <br>
-      <label>Your Message <span class="w3-text-red">*</span></label>
+      <label class="w3-dinmed">Your Message <span class="w3-text-red">*</span></label>
       <textarea class="w3-input w3-border-0 w3-round-large" type="text" rows="5" style="margin-top:10px;" name="message"></textarea>
       <br>
-      <label>Please verify that you are human <span class="w3-text-red">*</span></label>
+      <label class="w3-dinmed">Please verify that you are human <span class="w3-text-red">*</span></label>
       <div class="g-recaptcha" style="margin-top:10px" data-sitekey="6LdUwTAUAAAAAMkOg3qGznAVTQ1hxP5FxFvXzTQM"></div>
       <button class="w3-btn w3-orange w3-text-white w3-display-bottomright w3-round-large" style="margin-right:50px;margin-bottom:50px">Submit</button>
       {{ csrf_field() }}
